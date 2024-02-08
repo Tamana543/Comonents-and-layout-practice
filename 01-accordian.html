@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components Prac</title>
+  </head>
+  <style>
+    /* Main color = #087f5b
+      GREY color= #343a40
+      footer color = #495057
+       border-bottom: 1rem solid #f08554;
+       stroke
+       #868e96
+       #ced4da
+       #e6fcf5
+       #c3fae8
+
+      */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      color: #22223b;
+    }
+    .container {
+      width: 700px;
+      margin: 100px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .item {
+      box-shadow: 0 0 34px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      column-gap: 20px;
+      row-gap: 25px;
+    }
+    .sec {
+      grid-column: 2;
+      display: none;
+    }
+    .num {
+      font-size: 18px;
+      color: #bbc0c5;
+    }
+    .first-para {
+      font-size: 25px;
+    }
+
+    .icon {
+      stroke: black;
+      justify-self: start;
+    }
+    .sec p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .sec ul {
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      color: #868e96;
+    }
+
+    .active {
+      border-top: 4px solid #08775b;
+    }
+    .active .num {
+      color: #08775b;
+    }
+    .active .first-para {
+      color: #08775b;
+    }
+    .active .sec {
+      display: block;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item">
+        <p class="num">01</p>
+        <p class="first-para">Where are these chairs assemble?</p>
+        <p class="icon"><a href="#">👇</a></p>
+
+        <div class="sec">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+            reiciendis atque deserunt nisi ipsam iure praesentium odio eius
+            quasi voluptatum natus perferendis, nemo expedita esse fugit
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Quod impedit dolor, cumque doloribus incidunt</li>
+            <li>corporis sunt amet reiciendis distinctio,</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>nihil, vero sunt dolorem aperiam.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item active">
+        <p class="num">02</p>
+        <p class="first-para">How long do I have to return Chair?</p>
+        <p class="icon"><a href="#">👇</a></p>
+
+        <div class="sec">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+            reiciendis atque deserunt nisi ipsam iure praesentium odio eius
+            quasi voluptatum natus perferendis, nemo expedita esse fugit
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Quod impedit dolor, cumque doloribus incidunt</li>
+            <li>corporis sunt amet reiciendis distinctio,</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>nihil, vero sunt dolorem aperiam.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="num">03</p>
+        <p class="first-para">Do you ship to countries outside the EU?</p>
+        <p class="icon"><a href="#">👇</a></p>
+
+        <div class="sec">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+            reiciendis atque deserunt nisi ipsam iure praesentium odio eius
+            quasi voluptatum natus perferendis, nemo expedita esse fugit
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Quod impedit dolor, cumque doloribus incidunt</li>
+            <li>corporis sunt amet reiciendis distinctio,</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>nihil, vero sunt dolorem aperiam.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

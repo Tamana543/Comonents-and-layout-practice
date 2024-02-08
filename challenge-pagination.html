@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination</title>
+  </head>
+  <style>
+    /* Main color = #087f5b GREY color= #343a40 footer color = #495057
+    border-bottom: 1rem solid #f08554; stroke #868e96 #ced4da #e6fcf5 #c3fae8
+    #f8f9fa #e9ecef */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 150px;
+    }
+    a,
+    a:visited {
+      text-decoration: none;
+      color: black;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+    }
+    a:nth-child(4) {
+      background-color: #087f5b;
+      color: #ffff;
+      font-size: 16px;
+    }
+    a:hover,
+    button:hover {
+      background-color: #087f5b;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffff;
+      border: 1px solid #087f5b;
+      font-size: 16px;
+      color: #087f5b;
+    }
+  </style>
+  <body>
+    <button>&lt;</button>
+
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <span>...</span>
+    <a href="#">23</a>
+    <button>></button>
+  </body>
+</html>

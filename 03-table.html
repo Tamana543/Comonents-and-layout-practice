@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Component</title>
+  </head>
+  <style>
+    /* Main color = #087f5b
+      GREY color= #343a40
+      footer color = #495057
+       border-bottom: 1rem solid #f08554;
+       stroke
+       #868e96
+       #ced4da
+       #e6fcf5
+       #c3fae8
+       #f8f9fa
+       #e9ecef
+
+      */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+    table {
+      width: 750px;
+      margin-top: 100px;
+      /* margin: 0 auto; */
+      border-collapse: collapse;
+      font-size: 18px;
+    }
+    tr th {
+      text-align: left;
+      padding: 16px 24px;
+    }
+
+    thead th {
+      text-align: left;
+      background-color: #087f5b;
+      width: 25%;
+      color: white;
+      padding-left: 0px;
+    }
+    thead th:first-child {
+      padding-left: 24px;
+    }
+    tr:nth-child(odd) {
+      background-color: #f8f9fa;
+    }
+    tr:nth-child(even) {
+      background-color: #e9ecef;
+    }
+    .aport {
+      background-image: linear-gradient(to left, red, green);
+    }
+  </style>
+  <body>
+    <table>
+      <thead>
+        <th>Chair</th>
+        <th>The Laid Back</th>
+        <th>The Worker Bee</th>
+        <th>The chair 4/2</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80cm</td>
+          <td>50cm</td>
+          <td>220cm</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>100cm</td>
+          <td>110cm</td>
+          <td>90cm</td>
+        </tr>
+        <tr>
+          <th>Depth</th>
+          <td>70cm</td>
+          <td>65cm</td>
+          <td>80cm</td>
+        </tr>
+        <tr class="aport">
+          <th>Weight</th>
+          <td>19kg</td>
+          <td>22kg</td>
+          <td>80kg</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

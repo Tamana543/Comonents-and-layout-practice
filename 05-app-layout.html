@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- #7048e8 
+#343a40
+#e9ecef
+#5f3dc4 btn
+#d6336c
+#adb5bd-->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      text-align: center;
+      font-weight: 600;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 80px 200px 1fr 200px;
+      grid-template-rows: 60px 1fr;
+    }
+    nav {
+      background-color: black;
+      color: white;
+      grid-row: 1 / -1;
+      padding-top: 15px;
+    }
+    menu {
+      background-color: #7048e8;
+
+      grid-column: 2 / -1;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+    }
+    button {
+      font-size: 16px;
+      display: inline-block;
+      background-color: #4622af;
+      color: #ffff;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+    }
+    button:last-child {
+      margin-left: auto;
+      background-color: #d6336c;
+    }
+    section {
+      overflow: scroll;
+      /* by this value you can make something fit to the main width , you can make it scrollen or hidden */
+      /* overflow: hidden; */
+      background-color: #d4d4d4f8;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .email {
+      font-size: 20px;
+      background-color: #adb5bd;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    main {
+      background-color: #ffff;
+      padding-top: 15px;
+    }
+    aside {
+      background-color: #d4d4d4f8;
+      padding-top: 15px;
+    }
+  </style>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forword</button>
+      <button>Mark unreed</button>
+      <button>Trash</button>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+    </section>
+    <main>Email view</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>

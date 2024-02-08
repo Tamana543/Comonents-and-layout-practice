@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components Prac</title>
+  </head>
+  <style>
+    /* Main color = #087f5b
+      GREY color= #343a40
+      footer color = #495057
+       border-bottom: 1rem solid #f08554;
+       stroke
+       #868e96
+       #ced4da
+       #e6fcf5
+       #c3fae8
+
+      */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+    }
+    .container {
+      width: 700px;
+      background-color: #087f5b;
+      margin: 90px auto;
+      /* padding: 20px;
+      padding-left: 80px;
+      padding-right: 40px; */
+      padding: 20px 40px 20px 80px;
+      display: flex;
+      gap: 80px;
+      justify-content: center;
+      border-radius: 10px;
+
+      position: relative;
+    }
+    img {
+      height: 180px;
+      border-radius: 10px;
+      transform: scale(1.5);
+      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
+    }
+    .testimonial {
+      color: #ffff;
+    }
+    .testimonial-text {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .testimonial-author {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+    .testimonial-job {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .btn {
+      background-color: white;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+      height: 40px;
+      width: 40px;
+      border: none;
+      position: absolute;
+      top: 50%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .btn-icon {
+      stroke: #087f5b;
+    }
+    .btn--right {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+    .btn--left {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+    .dots {
+      display: flex;
+      gap: 8px;
+      position: absolute;
+      bottom: 0;
+      transform: translate(-50%, 25px);
+    }
+    .dot {
+      width: 15px;
+      height: 15px;
+      border: 2px solid #087f5b;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .dot--tab {
+      background-color: #087f5b;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <img src="img/15698421999402hjhj.jpg" alt="author image" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut rem aut
+          temporibus quod quia. Assumenda velit ipsam quam ad omnis modi
+          quisquam "
+        </p>
+        <p class="testimonial-author">Maria De Almeida</p>
+        <p class="testimonial-job">Senior product manager at EDP commercial</p>
+      </blockquote>
+      <button class="btn btn--left"><span class="btn-icon">⬅</span></button>
+      <button class="btn btn--right"><span class="btn-icon">➡</span></button>
+      <div class="dots">
+        <button class="dot dot--tab">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
